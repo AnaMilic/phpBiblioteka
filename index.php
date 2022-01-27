@@ -23,7 +23,7 @@
         <div id="pocetna-div">
             <?php
 
-            $upit = "select knjiga.naziv_knjige, knjiga.izdavac, knjiga.cena, pisac.ime, pisac.prezime, biblioteka.naziv from knjiga join pisac on knjiga.pisac_id=pisac.id join biblioteka on knjiga.biblioteka_id=biblioteka.id";
+            $upit = "select knjiga.id, knjiga.naziv_knjige, knjiga.izdavac, knjiga.cena, pisac.ime, pisac.prezime, biblioteka.naziv from knjiga join pisac on knjiga.pisac_id=pisac.id join biblioteka on knjiga.biblioteka_id=biblioteka.id";
             require 'conn.php';
             $rez = $connection->query($upit);
             while ($knjiga = mysqli_fetch_array($rez)) {
@@ -38,7 +38,7 @@
                         <h4 class="card-subtitle mb-2">Cena: <?php echo $knjiga['cena'] ?> RSD</h4>
                         <div id="dugmici">
                             <a href="#" class="card-link"><button class="btn btn-warning dgm">Izmeni</button></a>
-                            <a href="#" class="card-link"><button class="btn btn-success dgm">Obriši</button></a>
+                            <a href="obrisiKnjigu.php?id=<?php echo $knjiga['id']; ?>" class="card-link"><button class="btn btn-success dgm">Obriši</button></a>
                         </div>
                     </div>
                 </div>
