@@ -41,7 +41,6 @@ function filter() {
 
         let naziv_cena = $('#naziv-cena-select').val();
         let sortiranje = $(this).attr('value');
-        alert($(this).attr('value'));
 
         $.ajax(
             {
