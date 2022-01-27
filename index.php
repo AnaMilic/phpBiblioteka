@@ -37,7 +37,7 @@
                         <p class="card-text text-muted">Biblioteka: <?php echo $knjiga['naziv'] ?></p>
                         <h4 class="card-subtitle mb-2">Cena: <?php echo $knjiga['cena'] ?> RSD</h4>
                         <div id="dugmici">
-                            <a href="#" class="card-link"><button class="btn btn-warning dgm">Izmeni</button></a>
+                            <a href="formaIzmena.php?id=<?php echo $knjiga['id']; ?>" class="card-link"><button class="btn btn-warning dgm">Izmeni</button></a>
                             <a href="obrisiKnjigu.php?id=<?php echo $knjiga['id']; ?>" class="card-link"><button class="btn btn-success dgm">Obriši</button></a>
                         </div>
                     </div>
