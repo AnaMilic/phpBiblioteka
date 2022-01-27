@@ -46,3 +46,10 @@
 .dgm {
     width: 100px;
 }
+
+#formaNova {
+    width: 500px;
+    margin-left: 68 0px;
+    margin-top: 50px;
+    display: none;
+}
