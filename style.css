@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+}
+
+#pocetna-div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#knjiga-pocetna {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#nova-knjiga-nav {
+    margin-left: 640px;
+}
+
+#nova-knjiga-btn {
+    width: 200px;
+    height: 40px;
+}
+
+.card border-primary text-center {
+    margin-right: 20px;
+    margin-left: 180px;
+    width: 300px;
+    height: 220px;
+}
+
+#slika_knjige {
+    height: 220px;
+    width: 160px;
+}
+
+.card-title {
+    margin-bottom: 15px;
+}
+
+#dugmici {
+    margin-top: 15px;
+}
+
+.dgm {
+    width: 100px;
+}
