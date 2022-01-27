@@ -34,7 +34,7 @@
                         <h3 class="card-title"><?php echo $knjiga['naziv_knjige']; ?></h3>
                         <h6 class="card-subtitle mb-2 text-muted">Pisac: <?php echo $knjiga['ime'] . " " . $knjiga['prezime']; ?></h6>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0zazkmTg7YrGKuV63JK-UKIKVcsRpvAWceA&usqp=CAU" id="slika_knjige">
-                        <p class="card-text text-muted">Biblioteka: <?php echo $knjiga['naziv'] ?></p>
+                        <p class="card-text text-muted"><?php echo $knjiga['naziv'] ?></p>
                         <h4 class="card-subtitle mb-2">Cena: <?php echo $knjiga['cena'] ?> RSD</h4>
                         <div id="dugmici">
                             <a href="formaIzmena.php?id=<?php echo $knjiga['id']; ?>" class="card-link"><button class="btn btn-warning dgm">Izmeni</button></a>

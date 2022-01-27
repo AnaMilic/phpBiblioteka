@@ -5,22 +5,28 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <li class="nav-item" style="margin-right: 20px;">
+                    <a class="nav-link active" aria-current="page" href="index.php">Početna</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+
+                <li>
+                    <select id="naziv-cena-select" class="form-select text-center">
+                        <option value="naziv_knjige" style="padding-left: 25px;">Naziv</option>
+                        <option value="cena">Cena</option>
+                    </select>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+
+                <li style="margin-left: 5px;">
+                    <button class="btn btn-outline-success mx-3" type="button" id="filter" value="asc">Filter</button>
                 </li>
+
                 <li class="nav-item" id="nova-knjiga-nav">
                     <a class="navbar-brand" href="#"><button class="btn btn-primary" id="nova-knjiga-btn">Dodaj knjigu</button></a>
                 </li>
             </ul>
             <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn btn-outline-success mx-3" type="button" id="searchbtn">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Search" id="inputsearch" aria-label="Search">
             </form>
         </div>
     </div>

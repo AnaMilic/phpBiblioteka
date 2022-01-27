@@ -15,6 +15,7 @@
     <?php
     include 'conn.php';
     require 'knjiga.php';
+    require 'nav.php';
 
     $upit = "select * from knjiga where id=" . $_GET['id'];
 
